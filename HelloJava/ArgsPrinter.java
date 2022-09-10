@@ -1,4 +1,4 @@
-//package HelloJava;
+package HelloJava;
 
 public class ArgsPrinter {
     public static void main(String[] args){
