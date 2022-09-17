@@ -1,6 +1,7 @@
 package ErrorsUnit;
 
 import java.awt.Point;
+import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -8,19 +9,24 @@ public class RandPoints {
     
     private ArrayList<Point> points;
 
-    
-
-    // public static void writePointsToFile(ArrayList<Point> points){
-    //     //somestuff
-    // }
-
     public RandPoints(ArrayList<Point> points){
         this.points = points;
     }
 
-    // public Point center(){
-    //     //TODO
-    // }
+    public Point2D.Double center(){
+        int totalX = 0;
+        int totalY = 0;
+
+        for(Point p : this.points){
+            totalX += p.x;
+            totalY += p.y;
+        }
+
+        float centerX = (float)totalX/this.points.size();
+        float centerY = (float)totalY/this.points.size();
+
+        return new Point2D.Double(centerX, centerY);
+    }
 
     // public void writeFile(String filePath){
     //     //TODO
