@@ -44,19 +44,26 @@ public class RandPoints {
         }
     }
 
-    public static void readFile(String filePath){
+    public static RandPoints readFile(String filePath){
         BufferedReader reader;
+        ArrayList<Point> readPoints = new ArrayList<Point>();
         try{
             reader = new BufferedReader(new FileReader(filePath));
             String line = reader.readLine();
             while(line != null){
                 System.out.println(line);
+                String[] splitPoint = line.split(",", 2);
+                Integer x = Integer.parseInt(splitPoint[0]);
+                Integer y = Integer.parseInt(splitPoint[1]);
+                readPoints.add(new Point(x,y));
                 line=reader.readLine();
             }
             reader.close();
         } catch(IOException e){
             e.printStackTrace();
         }
+        RandPoints newPoints = new RandPoints(readPoints);
+        return newPoints;
     }
 
     public static RandPoints makePoints(int numPoints){
