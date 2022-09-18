@@ -9,6 +9,7 @@ public class RandPointsMain {
         System.out.println(myPoints.center());
 
         myPoints.writeFile("points.txt");
+        RandPoints.readFile("points.txt");
     }
 
 }
