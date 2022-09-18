@@ -4,6 +4,8 @@ import java.awt.Point;
 import java.awt.geom.Point2D;
 import java.util.ArrayList;
 import java.util.Random;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 
 public class RandPoints {
     
@@ -28,9 +30,16 @@ public class RandPoints {
         return new Point2D.Double(centerX, centerY);
     }
 
-    // public void writeFile(String filePath){
-    //     //TODO
-    // }
+    public void writeFile(String filePath){
+        try (PrintWriter pw = new PrintWriter(filePath)) {
+            for(Point p: this.points){
+                pw.println(p.x + "," + p.y);
+            }
+        }
+        catch(FileNotFoundException e){
+            System.out.println(e);
+        }
+    }
 
     // public static RandPoints readFile(String filePath){
     //     //TODO

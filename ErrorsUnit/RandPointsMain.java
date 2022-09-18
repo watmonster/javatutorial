@@ -7,6 +7,8 @@ public class RandPointsMain {
         myPoints.printPoints();
         System.out.println("Center: ");
         System.out.println(myPoints.center());
+
+        myPoints.writeFile("points.txt");
     }
 
 }
