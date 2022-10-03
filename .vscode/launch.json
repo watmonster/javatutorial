@@ -4,67 +4,19 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-        // {
-        //     "type": "java",
-        //     "name": "Launch Current File",
-        //     "request": "launch",
-        //     "mainClass": "${file}"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch MessageMain",
-        //     "request": "launch",
-        //     "mainClass": "CreatingClasses.MessageMain",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch RandPointsMain",
-        //     "request": "launch",
-        //     "mainClass": "ErrorsUnit.RandPointsMain",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch ArgsPrinter",
-        //     "request": "launch",
-        //     "mainClass": "HelloJava.ArgsPrinter",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch Greeter",
-        //     "request": "launch",
-        //     "mainClass": "HelloJava.Greeter",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch HelloWorld",
-        //     "request": "launch",
-        //     "mainClass": "HelloJava.HelloWorld",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
-        // {
-        //     "type": "java",
-        //     "name": "Launch Numbers",
-        //     "request": "launch",
-        //     "mainClass": "HelloJava.Numbers",
-        //     "projectName": "javatutorial_ed6274ab"
-        // },
+        {
+            "type": "java",
+            "name": "Launch Ball",
+            "request": "launch",
+            "mainClass": "ProcessingUnit.Ball",
+            "projectName": "javatutorial_ed6274ab"
+        },
         {
             "type": "java",
             "name": "Launch MySketchMain",
             "request": "launch",
             "mainClass": "ProcessingUnit.MySketchMain",
             "projectName": "javatutorial_ed6274ab"
-        }//,
-        // {
-        //     "type": "java",
-        //     "name": "Launch MyGui",
-        //     "request": "launch",
-        //     "mainClass": "SwingUnit.MyGui",
-        //     "projectName": "javatutorial_ed6274ab"
-        // }
+        }
     ]
 }
