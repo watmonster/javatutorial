@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MySketch2",
+            "request": "launch",
+            "mainClass": "ProcessingUnit.MySketch2",
+            "projectName": "javatutorial_ed6274ab"
+        },
+        {
+            "type": "java",
             "name": "Launch Ball",
             "request": "launch",
             "mainClass": "ProcessingUnit.Ball",
